@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    overflow:hidden ;
+    font-family: Ubuntu;
+
+}
+#menu{
+    text-align: center;
+    background: #a0bce0;
+    position:fixed;
+    width: 100vw;
+    padding-top:30vw;
+}
+#menu h1{
+     color: chartreuse;
+}
+#menu button{
+    display: inline-block;
+    width: 50vw;
+    padding:20px;
+    margin: 10 auto;
+    border:none;
+    border-radius:  10px;
+    border-radius: 10px;
+}
+#canavas {
+    border-bottom:1px solid #cecece;
+    position :fixed;
+    width: 100vw;
+    height: 70vh;
+
+}
+#control{
+    position: fixed;
+    top: 70vh;
+    width:100vw ;
+    text-align: center;
+}
+#control button{
+    width: 25vw;
+    height: 25vw;
+    margin: 1vw;
+    border-radius: 50%;
+    border: 1px solid;
+    color: cyan;
+    background: none;
+}
