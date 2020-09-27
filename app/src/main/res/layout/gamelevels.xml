@@ -16,93 +16,37 @@
         app:srcCompat="@drawable/main_background"
         android:contentDescription="TODO" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        android:id="@+id/container1"
         android:layout_width="match_parent"
-        android:layout_height="526dp">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="62dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="112dp"
-            android:text="2"
-            app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/container2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="62dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="112dp"
-            android:text="3"
-            app:layout_constraintStart_toEndOf="@+id/button5"
-            app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/container3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="62dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="112dp"
-            android:layout_marginEnd="18dp"
-            android:text="4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/button6"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="62dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="112dp"
-            android:text="1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="62dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="228dp"
-            android:text="5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="62dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="144dp"
-            android:layout_marginTop="228dp"
-            android:text="6"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="62dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="244dp"
-            android:layout_marginTop="228dp"
-            android:text="7"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="62dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="328dp"
-            android:layout_marginTop="228dp"
-            android:text="8"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:id="@+id/container4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>
